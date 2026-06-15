@@ -32,7 +32,6 @@ def check_vulkan():
     except:
         return False
 def gpu_info():
-    gpus = []
 
     for gpu in c.Win32_VideoController():
         name = gpu.Name.lower()
@@ -52,13 +51,5 @@ def gpu_info():
 
         vram = getattr(gpu, "AdapterRAM", None)
         shared = getattr(gpu, "SharedSystemMemory", None)
-
-        gpus.append({
-            "name": gpu.Name,
-            "company": company,
-            "backend": backend,
-            "vram": vram,
-            "shared_memory": shared
-        })
-
-    return gpus
+        results = [backend,vram]
+    return results

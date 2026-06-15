@@ -41,3 +41,4 @@ response = requests.post(url, headers=headers, json=data)
 print(response.json()["choices"][0]["message"]["content"])
 def ask_nvidia(prompt):
     print("not dupported till now")
+#done

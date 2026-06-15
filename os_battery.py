@@ -40,7 +40,9 @@ def battery_case():
             else:
                 battery_c = "not charging"
     return battery_c
-
+def user_device_name():
+    print(f"Hello{platform.node()}")
+#done
 
 
 

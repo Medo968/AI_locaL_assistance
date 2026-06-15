@@ -2,9 +2,7 @@ import subprocess
 import os
 import time
 import apps
-# -----------------------------
-# METHOD 1 (BEST): use "code" command
-# -----------------------------
+
 def open_vscode_with_command():
     try:
         subprocess.Popen(["code", "."])
@@ -13,9 +11,6 @@ def open_vscode_with_command():
         print("[FAIL] code command failed:", e)
 
 
-# -----------------------------
-# METHOD 2: direct EXE path fallback
-# -----------------------------
 def open_vscode_with_path():
     if os.path.exists(apps.apps["steam"]):
         subprocess.Popen([apps.apps["steam"]])
@@ -25,9 +20,6 @@ def open_vscode_with_path():
 print("[FAIL] VS Code exe not found")
 
 
-# -----------------------------
-# MAIN
-# -----------------------------
 if __name__ == "__main__":
     print("Opening VS Code...")
 

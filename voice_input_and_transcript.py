@@ -3,7 +3,6 @@ from scipy.io.wavfile import write
 import numpy as np
 from faster_whisper import WhisperModel
 import main
-
 recording = False
 stream = None
 audio_data = []

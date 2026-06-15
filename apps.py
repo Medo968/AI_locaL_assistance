@@ -10,3 +10,4 @@ apps = {
     "task manager" : "C:\\Windows\\System32\\Taskmgr.exe",
     "EA" : "C:\\Program Files\\Electronic Arts\\EA Desktop\\EA Desktop\\EALauncher.exe",   
 }
+#if u want to add more apps, just add them in the dictionary above with the name and path of the app.
